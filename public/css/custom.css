@@ -1,0 +1,457 @@
+.left-border {
+  border-left: 1px solid #dee2e6;
+}
+
+/* Navbar Enhancement */
+.navbar {
+  transition: all 0.3s ease;
+}
+
+.navbar-brand {
+  position: relative;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.navbar-brand i {
+  transform-origin: center;
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.navbar-brand:hover i {
+  transform: rotate(15deg) scale(1.1);
+}
+
+.nav-link {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-link:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: #dc3545;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover:after,
+.nav-link.active:after {
+  width: 50%;
+}
+
+.navbar-scrolled {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn-auth {
+  transition: all 0.3s ease;
+}
+
+.btn-auth:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Enhanced Hero Section */
+.hero-section {
+  background-attachment: fixed;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  padding: 80px 0;
+}
+
+.hero-content h1 {
+  animation: fadeInUp 1s ease-out;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content p {
+  animation: fadeInUp 1.2s ease-out;
+}
+
+.hero-content .btn {
+  animation: fadeInUp 1.4s ease-out;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  box-shadow: 0 4px 6px rgba(220, 53, 69, 0.2);
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(220, 53, 69, 0.3);
+}
+
+.btn-outline-light:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+/* Card Enhancements */
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  border: none;
+}
+
+.card-hover {
+  cursor: pointer;
+}
+
+.card-hover:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+  transition: all 0.5s ease;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+/* Section Enhancements */
+.section-title {
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin-bottom: 1.5rem;
+}
+
+.section-title:after {
+  transition: width 0.3s ease;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #ff416c 0%, #ff4b2b 100%);
+}
+
+.section-title:hover:after {
+  width: 100px;
+}
+
+/* Badge Enhancement */
+.badge {
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-radius: 30px;
+}
+
+.badge.bg-danger {
+  background: linear-gradient(90deg, #ff416c 0%, #ff4b2b 100%) !important;
+  box-shadow: 0 5px 15px rgba(220, 53, 69, 0.2);
+}
+
+/* Testimonial Section */
+.testimonial-card {
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 30px;
+  margin: 15px 0;
+  border: none;
+  transition: all 0.4s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #dc3545;
+  box-shadow: 0 5px 15px rgba(220, 53, 69, 0.2);
+}
+
+.testimonial-rating {
+  color: #ffc107;
+  margin: 10px 0;
+}
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(135deg, #ff416c 0%, #ff4b2b 100%);
+  padding: 60px 0;
+}
+
+.cta-section h2 {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.cta-btn {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cta-btn:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.5s ease;
+  z-index: -1;
+}
+
+.cta-btn:hover:before {
+  left: 0;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Feature Icons */
+.feature-icon {
+  transition: all 0.3s ease;
+}
+
+.card:hover .feature-icon {
+  transform: scale(1.2) rotate(10deg);
+  box-shadow: 0 10px 20px rgba(220, 53, 69, 0.3);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero-content {
+    padding: 60px 0;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .nav-link:after {
+    display: none;
+  }
+  
+  .navbar-collapse {
+    background-color: rgba(33, 37, 41, 0.98);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+}
+
+/* Scrollbar Enhancement */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: linear-gradient(135deg, #ff416c 0%, #ff4b2b 100%);
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+/* Membership Cards Enhancement for Indian High-Class Gym */
+.card-header.bg-danger {
+  background: linear-gradient(135deg, #ff416c 0%, #ff4b2b 100%) !important;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0 !important;
+}
+
+.card-header.bg-danger:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 0 0 0 100%;
+}
+
+.pricing-card-title {
+  color: #1E293B;
+  position: relative;
+  display: inline-block;
+}
+
+.pricing-card-title:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, #ff416c 0%, #ff4b2b 100%);
+}
+
+/* Indian inspired premium badge */
+.badge.bg-light {
+  background: #F8F9FA !important;
+  color: #dc3545 !important;
+  border: 1px solid #dc3545;
+  font-size: 0.75rem;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+/* Premium UI elements */
+.card.shadow {
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1) !important;
+  border: none;
+  transition: all 0.4s ease;
+}
+
+.card.shadow:hover {
+  box-shadow: 0 20px 40px rgba(220, 53, 69, 0.2) !important;
+  transform: translateY(-15px);
+}
+
+/* Footer Enhancements */
+.footer {
+  position: relative;
+  overflow: hidden;
+}
+
+.footer:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMTI4MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iIzMzMzMzMyI+PHBhdGggZD0iTTEyODAgMy40QzEwNTAuNTkgMTguMiA5NzkuMDYgNzkuOTQgODUwLjA5IDY5Ljk0Yy01OS45NSA0LjYzLTEwNC45LTI3LjEzLTE1OC4wNy0yLjczLTEzMS45MyA1OC43OS0xNDYuMS01Mi40MS0yNDkuOS0yMC43LTY5LjIzIDIwLjc1LTEzNS4xOS0yMC4yNi0yMDUuMzEtMS42LTgwLjQ5IDIxLjU3LTEyOS4yNSAxMDIuNzQtMjE0LjMgODAuNzMtMzguMSA1Ljk4LTU4LjIzLTEwLjU0LTgzLjI2LTI2LjEzYy0yOS4wNi0xOC4wMS01Mi4zNy0xMC42MS03My4zMy0xMC42MS00Ni45NSAwLTg2LjYzIDM0LjA0LTEyMy44MiAyNC43MlYxNDBIMTI4MHoiLz48L2c+PC9zdmc+);
+  background-size: cover;
+  background-position: top center;
+  z-index: 0;
+  opacity: 0.1;
+}
+
+.footer .container {
+  position: relative;
+  z-index: 1;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background: #dc3545;
+  transform: translateY(-5px);
+}
+
+/* Button hover effects */
+.btn {
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.btn:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+
+.btn:hover:after {
+  height: 100%;
+}
+
+/* Dropdown menu enhancements */
+.dropdown-menu {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.dropdown-item {
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+  border-radius: 6px;
+  margin: 2px 0;
+}
+
+.dropdown-item:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(220, 53, 69, 0.1) 0%, rgba(220, 53, 69, 0) 100%);
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+
+.dropdown-item:hover:before {
+  width: 100%;
+} 
