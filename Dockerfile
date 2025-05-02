@@ -1,4 +1,4 @@
-FROM php:8.1-fpm
+FROM php:8.1-apache
 
 # Install dependencies
 RUN apt-get update && apt-get install -y \
@@ -18,11 +18,14 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 # Install PHP extensions
 RUN docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd
 
+# Enable Apache rewrite module
+RUN a2enmod rewrite
+
 # Set working directory
-WORKDIR /var/www
+WORKDIR /var/www/html
 
 # Copy project files
-COPY . /var/www/
+COPY . /var/www/html/
 
 # Install Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
@@ -36,9 +39,9 @@ RUN npm install && npm run build
 # Set permissions
 RUN chmod -R 777 storage bootstrap/cache
 
-# Set up Apache to serve the app
-RUN a2enmod rewrite
-COPY docker/apache.conf /etc/apache2/sites-available/000-default.conf
+# Update Apache configuration for Laravel
+RUN sed -i 's!/var/www/html!/var/www/html/public!g' /etc/apache2/sites-available/000-default.conf
+RUN sed -i 's/80/8080/g' /etc/apache2/ports.conf /etc/apache2/sites-available/000-default.conf
 
 # Expose port 8080
 EXPOSE 8080
