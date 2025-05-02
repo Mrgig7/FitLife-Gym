@@ -15,6 +15,12 @@ use Illuminate\Support\Facades\Auth;
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/about', [HomeController::class, 'about'])->name('about');
 Route::get('/classes', [HomeController::class, 'classes'])->name('classes');
+Route::get('/class-showcase', function() {
+    return view('class-showcase');
+})->name('class.showcase');
+Route::get('/classes-static', function() {
+    return view('classes-static');
+})->name('classes.static');
 Route::get('/trainers', [HomeController::class, 'trainers'])->name('trainers');
 Route::get('/membership', [HomeController::class, 'membership'])->name('membership');
 Route::get('/contact', [HomeController::class, 'contact'])->name('contact');

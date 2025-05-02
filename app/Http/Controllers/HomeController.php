@@ -57,8 +57,12 @@ class HomeController extends Controller
      */
     public function classes()
     {
-        $classes = GymClass::where('is_active', 1)->get();
-        return view('classes', compact('classes'));
+        // Temporarily redirecting to static version with icons
+        return redirect()->route('classes.static');
+        
+        // Original code - commented out
+        // $classes = GymClass::where('is_active', 1)->get();
+        // return view('classes', compact('classes'));
     }
 
     /**

@@ -207,7 +207,7 @@
                 <div class="col-lg-7">
                     <span class="badge hero-badge mb-4">PREMIUM FITNESS EXPERIENCE</span>
                     <h1 class="hero-title">Transform Your Body,<br> Transform Your Life</h1>
-                    <p class="hero-text">Join India's most exclusive fitness community. Experience world-class equipment, expert trainers, and luxury facilities designed for your fitness journey.</p>
+                    <p class="hero-text">Join Hanamkonda's most exclusive fitness community. Experience world-class equipment, expert trainers, and luxury facilities designed for your fitness journey.</p>
                     <div class="d-flex flex-wrap gap-4 mt-5">
                         <a href="{{ route('membership') }}" class="btn btn-join">Join Now</a>
                         <a href="{{ route('classes') }}" class="btn btn-explore text-white"><i class="fas fa-play-circle me-2"></i>Explore Classes</a>
@@ -226,7 +226,7 @@
                                 </div>
                             </div>
                             <div class="ms-3">
-                                <p class="mb-0 text-white"><span class="fw-bold fs-5">1000+</span> elite members across India</p>
+                                <p class="mb-0 text-white"><span class="fw-bold fs-5">1000+</span> elite members in Telangana</p>
                             </div>
                         </div>
                     </div>
@@ -240,7 +240,7 @@
         <div class="container py-5">
             <div class="text-center section-header">
                 <span class="badge section-badge">LUXURY FITNESS</span>
-                <h2 class="section-title">India's Premier Fitness Experience</h2>
+                <h2 class="section-title">Hanamkonda's Premier Fitness Experience</h2>
                 <div class="mx-auto" style="max-width: 650px;">
                     <p class="lead text-muted">Our state-of-the-art facilities blend traditional Indian wellness with modern fitness science for an unparalleled experience.</p>
                 </div>
@@ -347,7 +347,7 @@
                 <span class="badge section-badge">TESTIMONIALS</span>
                 <h2 class="section-title">What Our Members Say</h2>
                 <div class="mx-auto" style="max-width: 650px;">
-                    <p class="lead text-muted">Hear from our community about how FitLife Gym has helped transform their lives.</p>
+                    <p class="lead text-muted">Hear from our community about how Gym Fitness Zone has helped transform their lives.</p>
                 </div>
             </div>
             <div class="row g-4">
@@ -369,7 +369,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <p class="mb-0">"The trainers at FitLife have completely transformed my approach to fitness. I've lost 30 pounds and gained more energy than I've had in years. The community here is incredible!"</p>
+                        <p class="mb-0">"The trainers at Gym Fitness Zone have completely transformed my approach to fitness. I've lost 30 pounds and gained more energy than I've had in years. The community here is incredible!"</p>
                     </div>
                 </div>
                 <div class="col-md-4">

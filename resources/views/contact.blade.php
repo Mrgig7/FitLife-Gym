@@ -105,7 +105,7 @@
                                 <i class="fas fa-map-marker-alt fa-2x"></i>
                             </div>
                             <h4>Visit Us</h4>
-                            <p class="text-muted">123 Fitness Street<br>Gym City, GC 12345<br>United States</p>
+                            <p class="text-muted">3rd Floor, Vikas Nagar,<br>near Laxmi Kiranam, 2-9-268/4,<br>NGO Colony Rd, NGOs Colony,<br>Ashoka Colony, Hanamkonda,<br>Telangana 506001</p>
                         </div>
                     </div>
                 </div>
@@ -116,7 +116,7 @@
                                 <i class="fas fa-phone fa-2x"></i>
                             </div>
                             <h4>Call Us</h4>
-                            <p class="text-muted">Main: (123) 456-7890<br>Support: (123) 456-7891<br>Fax: (123) 456-7892</p>
+                            <p class="text-muted">Main: +91 95025 35143</p>
                         </div>
                     </div>
                 </div>
@@ -127,7 +127,7 @@
                                 <i class="fas fa-envelope fa-2x"></i>
                             </div>
                             <h4>Email Us</h4>
-                            <p class="text-muted">info@fitlifegym.com<br>support@fitlifegym.com<br>membership@fitlifegym.com</p>
+                            <p class="text-muted">info@gymfitnesszone.com<br>support@gymfitnesszone.com<br>membership@gymfitnesszone.com</p>
                         </div>
                     </div>
                 </div>
@@ -147,7 +147,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="map-responsive shadow-sm rounded">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.2375861336187!2d-74.0059394843667!3d40.7127837792989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a197c06b7cb%3A0x40a06c78f79e5de6!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1619071475898!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3799.0535268522054!2d79.5646883!3d17.8052917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a334f71e8a8894f%3A0x1b62d1f5ea6ae310!2sGym%20Fitness%20Zone!5e0!3m2!1sen!2sin!4v1694123456789!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </div>
             </div>

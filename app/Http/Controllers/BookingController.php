@@ -20,9 +20,33 @@ class BookingController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
+        $classId = $request->query('class_id');
+        
+        if (!$classId) {
+            return redirect()->route('class.schedule')->with('error', 'Please select a class to book.');
+        }
+        
+        $class = GymClass::with('trainer.user')->findOrFail($classId);
+        
+        // Check if class is full
+        if ($class->availableSpots <= 0) {
+            return redirect()->route('class.schedule')->with('error', 'This class is already full.');
+        }
+        
+        // Check if user already booked this class
+        $user = Auth::user();
+        $existingBooking = Booking::where('user_id', $user->id)
+            ->where('gym_class_id', $class->id)
+            ->where('status', '!=', 'cancelled')
+            ->first();
+            
+        if ($existingBooking) {
+            return redirect()->route('class.schedule')->with('error', 'You have already booked this class.');
+        }
+        
+        return view('bookings.create', compact('class'));
     }
 
     /**
@@ -30,7 +54,40 @@ class BookingController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'gym_class_id' => 'required|exists:gym_classes,id',
+            'notes' => 'nullable|string|max:500',
+        ]);
+        
+        $user = Auth::user();
+        $classId = $request->gym_class_id;
+        $class = GymClass::findOrFail($classId);
+        
+        // Check if user already booked this class
+        $existingBooking = Booking::where('user_id', $user->id)
+            ->where('gym_class_id', $classId)
+            ->where('status', '!=', 'cancelled')
+            ->first();
+            
+        if ($existingBooking) {
+            return redirect()->back()->with('error', 'You have already booked this class.');
+        }
+        
+        // Check if class is full
+        if ($class->availableSpots <= 0) {
+            return redirect()->back()->with('error', 'This class is already full.');
+        }
+        
+        // Create booking
+        $booking = new Booking();
+        $booking->user_id = $user->id;
+        $booking->gym_class_id = $classId;
+        $booking->booking_date = now();
+        $booking->status = 'confirmed';
+        $booking->notes = $request->notes;
+        $booking->save();
+        
+        return redirect()->route('user.bookings')->with('success', 'Class booked successfully!');
     }
 
     /**

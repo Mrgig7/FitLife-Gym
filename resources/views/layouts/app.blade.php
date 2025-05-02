@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'FitLife Gym') }} | @yield('title')</title>
+    <title>{{ config('app.name', 'Gym Fitness Zone') }} | @yield('title')</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -179,7 +179,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center" href="{{ route('home') }}">
-                    <i class="fas fa-dumbbell me-2"></i><span>FitLife Gym</span>
+                    <i class="fas fa-dumbbell me-2"></i><span>Gym Fitness Zone</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -193,7 +193,7 @@
                             <a class="nav-link {{ request()->routeIs('about') ? 'active' : '' }}" href="{{ route('about') }}">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link {{ request()->routeIs('classes') ? 'active' : '' }}" href="{{ route('classes') }}">Classes</a>
+                            <a class="nav-link {{ request()->routeIs('classes') || request()->routeIs('classes.static') ? 'active' : '' }}" href="{{ route('classes') }}">Classes</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link {{ request()->routeIs('trainers') ? 'active' : '' }}" href="{{ route('trainers') }}">Trainers</a>
@@ -258,7 +258,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 mb-4 mb-md-0">
-                        <h4 class="text-uppercase mb-4">FitLife Gym</h4>
+                        <h4 class="text-uppercase mb-4">Gym Fitness Zone</h4>
                         <p>Transform your body, transform your life. Join our fitness community today and experience the difference of personalized training and world-class facilities.</p>
                         <div class="social-links mt-3">
                             <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
@@ -280,16 +280,16 @@
                     </div>
                     <div class="col-md-4">
                         <h4 class="text-uppercase mb-4">Contact Info</h4>
-                        <p class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> 123 Fitness Street, Gym City</p>
-                        <p class="mb-2"><i class="fas fa-phone me-2"></i> +1 (555) 123-4567</p>
-                        <p class="mb-2"><i class="fas fa-envelope me-2"></i> info@fitlifegym.com</p>
+                        <p class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> 3rd Floor, Vikas Nagar, near Laxmi Kiranam, Hanamkonda</p>
+                        <p class="mb-2"><i class="fas fa-phone me-2"></i> +91 95025 35143</p>
+                        <p class="mb-2"><i class="fas fa-envelope me-2"></i> info@gymfitnesszone.com</p>
                         <p class="mb-0"><i class="fas fa-clock me-2"></i> Mon-Fri: 5:00 AM - 10:00 PM<br>Sat-Sun: 7:00 AM - 8:00 PM</p>
                     </div>
                 </div>
                 <hr class="my-4 bg-light">
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <p class="mb-0">&copy; {{ date('Y') }} FitLife Gym. All rights reserved.</p>
+                        <p class="mb-0">&copy; {{ date('Y') }} Gym Fitness Zone. All rights reserved.</p>
                     </div>
                 </div>
             </div>

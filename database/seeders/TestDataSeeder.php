@@ -27,15 +27,15 @@ class TestDataSeeder extends Seeder
 
         // Create trainer users
         $trainer1 = User::create([
-            'name' => 'John Trainer',
-            'email' => 'john@gym.com',
+            'name' => 'Rajiv Sharma',
+            'email' => 'rajiv@gym.com',
             'password' => Hash::make('password'),
             'role' => 'trainer',
         ]);
 
         $trainer2 = User::create([
-            'name' => 'Jane Trainer',
-            'email' => 'jane@gym.com',
+            'name' => 'Priya Patel',
+            'email' => 'priya@gym.com',
             'password' => Hash::make('password'),
             'role' => 'trainer',
         ]);
@@ -44,8 +44,8 @@ class TestDataSeeder extends Seeder
         $trainer1Profile = Trainer::create([
             'user_id' => $trainer1->id,
             'specialization' => 'Strength Training',
-            'bio' => 'Experienced strength trainer with over 10 years of experience.',
-            'certification' => 'NASM Certified Personal Trainer',
+            'bio' => 'Experienced strength trainer with over 10 years of experience in powerlifting and functional training.',
+            'certification' => 'ACE Certified Personal Trainer',
             'experience_years' => 10,
             'availability' => ['Monday', 'Wednesday', 'Friday'],
             'is_active' => true,
@@ -54,7 +54,7 @@ class TestDataSeeder extends Seeder
         $trainer2Profile = Trainer::create([
             'user_id' => $trainer2->id,
             'specialization' => 'Yoga and Flexibility',
-            'bio' => 'Certified yoga instructor passionate about helping others improve flexibility.',
+            'bio' => 'Certified yoga instructor passionate about helping others improve flexibility and mindfulness through yoga.',
             'certification' => 'Yoga Alliance Certified Instructor',
             'experience_years' => 7,
             'availability' => ['Tuesday', 'Thursday', 'Saturday'],

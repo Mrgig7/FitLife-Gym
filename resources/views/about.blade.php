@@ -9,7 +9,7 @@
         <div class="container hero-content">
             <div class="row">
                 <div class="col-lg-8">
-                    <h1 class="display-4 fw-bold text-white">About FitLife Gym</h1>
+                    <h1 class="display-4 fw-bold text-white">About Gym Fitness Zone</h1>
                     <p class="lead text-white">Learn about our mission, values, and the story behind our fitness center</p>
                 </div>
             </div>
@@ -22,12 +22,12 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-4 mb-lg-0">
                     <h2 class="section-title">Our Story</h2>
-                    <p class="lead">Founded in 2010, FitLife Gym was created with one mission in mind: to make fitness accessible to everyone.</p>
+                    <p class="lead">Founded in 2010, Gym Fitness Zone was created with one mission in mind: to make fitness accessible to everyone.</p>
                     <p>What started as a small studio with just a few pieces of equipment has grown into a full-service fitness center with state-of-the-art facilities and a team of expert trainers. Our journey has been fueled by the passion to help people transform their lives through fitness and wellness.</p>
                     <p>Over the years, we've helped thousands of members achieve their fitness goals, whether it's losing weight, building muscle, improving athletic performance, or simply leading a healthier lifestyle. We believe that fitness is for everyone, regardless of age, experience, or fitness level.</p>
                 </div>
                 <div class="col-lg-6">
-                    <img src="https://images.unsplash.com/photo-1576678927484-cc907957088c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80" alt="FitLife Gym" class="img-fluid rounded shadow">
+                    <img src="https://images.unsplash.com/photo-1576678927484-cc907957088c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80" alt="Gym Fitness Zone" class="img-fluid rounded shadow">
                 </div>
             </div>
         </div>
@@ -127,37 +127,37 @@
             <div class="row mb-4">
                 <div class="col-12 text-center">
                     <h2 class="section-title">Leadership Team</h2>
-                    <p class="text-muted">Meet the people behind FitLife Gym</p>
+                    <p class="text-muted">Meet the people behind Gym Fitness Zone</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <div class="card border-0 shadow-sm h-100 card-hover text-center">
-                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="John Doe">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="Amit Verma">
                         <div class="card-body">
-                            <h5 class="card-title">John Doe</h5>
+                            <h5 class="card-title">Amit Verma</h5>
                             <p class="card-text text-danger">Founder & CEO</p>
-                            <p class="card-text text-muted">John founded FitLife Gym with a vision to create a fitness center that prioritizes member experience and results.</p>
+                            <p class="card-text text-muted">Amit founded Gym Fitness Zone with a vision to create a fitness center that prioritizes member experience and results. With over 15 years in the fitness industry, he's passionate about creating a space where everyone feels welcome.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card border-0 shadow-sm h-100 card-hover text-center">
-                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="Jane Smith">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="Deepa Krishnan">
                         <div class="card-body">
-                            <h5 class="card-title">Jane Smith</h5>
+                            <h5 class="card-title">Deepa Krishnan</h5>
                             <p class="card-text text-danger">Fitness Director</p>
-                            <p class="card-text text-muted">With over 15 years of experience in the fitness industry, Jane oversees all fitness programs and trainer development.</p>
+                            <p class="card-text text-muted">With over 12 years of experience in the fitness industry, Deepa oversees all fitness programs and trainer development. Her approach combines traditional Indian wellness practices with modern fitness science.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card border-0 shadow-sm h-100 card-hover text-center">
-                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="Mike Johnson">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="Rahul Mehta">
                         <div class="card-body">
-                            <h5 class="card-title">Mike Johnson</h5>
+                            <h5 class="card-title">Rahul Mehta</h5>
                             <p class="card-text text-danger">Operations Manager</p>
-                            <p class="card-text text-muted">Mike ensures that our facilities run smoothly and that members have the best possible gym experience.</p>
+                            <p class="card-text text-muted">Rahul ensures that our facilities run smoothly and that members have the best possible gym experience. His attention to detail and dedication to customer service make him invaluable to our team.</p>
                         </div>
                     </div>
                 </div>
@@ -171,7 +171,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-8 mb-4 mb-lg-0">
                     <h2 class="fw-bold mb-3">Join Our Community</h2>
-                    <p class="lead mb-0">Become a part of FitLife Gym and start your fitness journey today!</p>
+                    <p class="lead mb-0">Become a part of Gym Fitness Zone and start your fitness journey today!</p>
                 </div>
                 <div class="col-lg-4 text-lg-end">
                     <a href="{{ route('membership') }}" class="btn btn-light btn-lg px-4">View Memberships</a>
